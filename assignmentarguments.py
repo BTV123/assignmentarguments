@@ -1,23 +1,16 @@
-# Do not modify these lines
+Do not modify these lines
 __winc_id__ = '7b9401ad7f544be2a23321292dd61cb6'
 __human_name__ = 'arguments'
 
 # Add your code after this line
-from unicodedata import name
 
 
 def greet(name, greeting="Hello, <name>!"):
-    greet = name + greeting
+    greet = greeting.replace(name)
     return greet
-def force(mass,body):
-    force = mass * body
-    mass[float]
-    round(body,1)
-    body[str]
-    body = gravity
-    return force
+
 gravity = dict(
-        sun =274,
+        sun = 274,
 	    jupiter = 24.92,
         neptune =	11.15,
         saturn =	10.44,
@@ -29,13 +22,14 @@ gravity = dict(
         moon =	1.62,
         pluto =	0.58,
 )
-dict.setdefault(earth = 9.8)
 
-def pull(m1,m2 d):
-    m1[float]
-    m2[float]
-    d[float]
+def force(mass,body):
+    float_dict = round(gravity[body],1)
+    force = mass * float_dict
+    return force
+
+def pull(m1,m2,d):
     G = 6.674*10**-11
     force = G*(m1*m2)/d**2
-    return force        
+    return force
 
